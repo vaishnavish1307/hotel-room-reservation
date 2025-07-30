@@ -20,8 +20,6 @@ This is a dynamic room reservation system built as part of the **SDE 3 Assessmen
 
 🔗 [Click here to view the live app](https://vaishnavish1307.github.io/hotel-room-reservation/)
 
-> *(Replace with your actual GitHub Pages link)*
-
 ## 🛠️ How It Works
 
 1. Enter the number of rooms (1 to 5)
