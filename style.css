@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 10px;
+  font-size: 16px;
+  width: 220px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons button:nth-child(1) {
+  background-color: #3498db;
+  color: white;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #f39c12;
+  color: white;
+}
+
+.buttons button:nth-child(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+}
+
+.hotel-layout {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.floor {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background: #ecf0f1;
+  border-radius: 8px;
+}
+
+.floor strong {
+  display: inline-block;
+  width: 100px;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.room {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px;
+  width: 60px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.room:hover {
+  transform: scale(1.1);
+}
+
+.room.occupied {
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.room.selected {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #aaa;
+}

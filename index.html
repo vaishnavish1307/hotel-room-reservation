@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Room Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏨 Hotel Room Reservation System</h1>
+      <p>Book up to 5 rooms with minimum travel time</p>
+    </header>
+
+    <section class="controls">
+      <input type="number" id="roomCount" min="1" max="5" placeholder="Rooms to book (1-5)">
+      <div class="buttons">
+        <button onclick="bookRooms()">Book Rooms</button>
+        <button onclick="generateRandomOccupancy()">Random Occupancy</button>
+        <button onclick="resetRooms()">Reset</button>
+      </div>
+    </section>
+
+    <section id="hotelLayout" class="hotel-layout">
+      <!-- Rooms will be rendered here -->
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Hotel Management System | Designed by Vaishnavi Shukla</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
